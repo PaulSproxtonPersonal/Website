@@ -8,7 +8,7 @@ const User = require('../models/userModel')
 // @route   /api/users
 // @access  Public
 const registerUser = asyncHandler(async (req, res) => {
-    const { name, email, password } = req.body
+    const { name, email, phone, password } = req.body
 
     // Validation
     if (!name || !email || !password) {
@@ -32,6 +32,7 @@ const registerUser = asyncHandler(async (req, res) => {
     const user = await User.create({
         name,
         email,
+        phone,
         password: hashedPassword
     })
 
@@ -40,6 +41,7 @@ const registerUser = asyncHandler(async (req, res) => {
             _id: user._id,
             name: user.name,
             email: user.email,
+            phone: user.phone,
             token: generateToken(user._id)
         })
     } else {
@@ -62,6 +64,7 @@ const loginUser = asyncHandler(async (req, res) => {
             _id: user._id,
             name: user.name,
             email: user.email,
+            phone: user.phone,
             token: generateToken(user._id)
         })
     } else {
@@ -76,7 +79,8 @@ const getMe = asyncHandler(async (req, res) => {
     const user = {
         id: req.user._id,
         email: req.user.email,
-        name: req.user.name
+        name: req.user.name,
+        phone: req.user.phone
     }
 
     res.status(200).json(user)
