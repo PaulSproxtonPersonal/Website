@@ -31,11 +31,19 @@ function Header() {
                 />
                 <Link to='/'>Paul Sproxton Home</Link>
             </div>
-            <ul>
+            <ul style={{
+                marginRight: '10px'
+            }}>
                 {user ? (
-                    <li>
-                        <button className="btn" onClick={onLogout}><FaSignOutAlt /> Logout</button>
-                    </li>
+                    <>
+                        <li>
+                            <h3 style={{ verticalAlign: 'middle', marginTop: '10px' }}>Logged in as {user.name} </h3>
+                        </li>
+                        <li>
+                            <button className="btn" onClick={onLogout}><FaSignOutAlt /> Logout</button>
+                        </li>
+                    </>
+
                 ) : (
                     <>
                         <li>
