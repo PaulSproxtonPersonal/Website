@@ -17,27 +17,24 @@ function Header() {
     return (
         <header className='header'>
             <div className="logo">
-                <img
-                    src="/images/HeadShot1.jpg"
-                    alt="Paul Sproxton"
-                    width="60"
-                    height="80"
-                    style={{
-                        verticalAlign: 'middle',
-                        marginLeft: '50px',
-                        marginRight: '10px',
-                        marginTop: '10px'
-                    }}
-                />
-                <Link to='/'>Paul Sproxton Home</Link>
+                <img src="/images/HeadShot1.jpg" alt="Paul Sproxton" />
+                <Link to='/' className='headerTitle'>Paul Sproxton</Link>
             </div>
+            <ul className="headerMenu-list">
+                <li className="headerMenu-item">
+                    <a href="#" className="headerMenu-link">IT Professional</a>
+                </li>
+                <li className="headerMenu-item">
+                    <a href="#" className="headerMenu-link">General Handyman</a>    
+                </li>
+            </ul>
             <ul style={{
                 marginRight: '10px'
             }}>
                 {user ? (
                     <>
                         <li>
-                            <h3 style={{ verticalAlign: 'middle', marginTop: '10px' }}>Logged in as {user.name} </h3>
+                            <h3 className='headerLoginInfo'>Logged in as {user.name} </h3>
                         </li>
                         <li>
                             <button className="btn" onClick={onLogout}><FaSignOutAlt /> Logout</button>
@@ -47,12 +44,12 @@ function Header() {
                 ) : (
                     <>
                         <li>
-                            <Link to='/login'>
+                            <Link to='/login' className='headerLoginInfo'>
                                 <FaSignInAlt /> Login
                             </Link>
                         </li>
                         <li>
-                            <Link to='/register'>
+                            <Link to='/register' className='headerLoginInfo'>
                                 <FaUser /> Register
                             </Link>
                         </li>
