@@ -1,4 +1,4 @@
-import { FaSignInAlt, FaSignOutAlt, FaUser } from 'react-icons/fa'
+import { FaSignInAlt, FaSignOutAlt, FaUser, FaLinkedin } from 'react-icons/fa'
 import { Link, useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { logout, reset } from '../features/auth/authSlice'
@@ -22,10 +22,15 @@ function Header() {
             </div>
             <ul className="headerMenu-list">
                 <li className="headerMenu-item">
-                    <a href="#" className="headerMenu-link">IT Professional</a>
+                    <Link to='/itprofessional' className='headerMenu-link'>IT Professional</Link>
                 </li>
                 <li className="headerMenu-item">
-                    <a href="#" className="headerMenu-link">General Handyman</a>    
+                    <Link to='/handyman' className='headerMenu-link'>General Handyman</Link>
+                </li>
+                <li className="headerMenu-item">
+                    <a href="https://www.linkedin.com/in/paul-sproxton" className='headerMenu-link-icon' target='_blank' rel='noreferrer'>
+                        <FaLinkedin />
+                    </a>
                 </li>
             </ul>
             <ul style={{

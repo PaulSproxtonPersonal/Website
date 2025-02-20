@@ -45,7 +45,7 @@ h3 {
 
 .container {
 	width: 100%;
-	max-width: 960px;
+	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 20px;
 	text-align: center;
@@ -133,30 +133,44 @@ h3 {
 	color: var(--primary-color);
 }
 
-/* Executive Summary */
-.summary {
+.header .headerMenu-link-icon {
+	color: var(--primary-color);
+	font-size: 3rem;
+}
+
+.header .headerMenu-link-icon:hover {
+	color: #fff;
+}
+
+/* Executive Summary, Passion */
+.summary,
+.passion {
 	background: var(--tertiary-color);
 }
 
-.summary-title {
+.summary-title,
+.passion-title {
 	color: var(--primary-color);
 	font-size: 2rem;
 	padding: 2rem 0 0 0;
 }
 
-.summary-flex {
+.summary-flex,
+.passion-flex {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.summary-flex img {
+.summary-flex img,
+.passion-flex img {
 	max-width: 300px;
 	max-height: 400px;
 	padding: 1rem;
 }
 
-.summary-text {
+.summary-text,
+.passion-text {
 	color: #fff;
 	justify-content: center;
 	align-itmes: center;
@@ -164,19 +178,95 @@ h3 {
 	padding: 2rem 1rem;
 }
 
-.summary-text p {
+.summary-text p,
+.passion-text p {
 	color: #fff;
 	line-height: 1.2;
 	font-size: 1.25rem;
 	padding-bottom: 20px;
 }
 
+.summary-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+.summary-link {
+	color: var(--primary-color);
+	font-size: 3rem;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.summary-link:hover {
+	color: #fff;
+}
+
+.summary-link-btn {
+	background: var(--primary-color);
+	padding: 10px 20px;
+	border: 1px solid #000;
+	border-radius: 30px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	cursor: pointer;
+	text-align: center;
+	appearance: button;
+	align-items: center;
+	justify-content: center;
+	margin: auto 10px;
+}
+
+.summary-link-btn:hover {
+	transform: scale(1.1);
+}
+
+.passion {
+	margin-top: 3rem;
+}
+
+/* IT Professional */
+.it-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+	border-bottom: 1px solid #e6e6e6;
+	margin-bottom: 60px;
+	background: var(--secondary-color);
+}
+
+.it-header-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 2rem;
+	font-size: 1.2rem;
+}
+
+.it-header-item {
+	margin-left: 20px;
+}
+
+.it-header-item a {
+	display: flex;
+	align-items: center;
+	color: #fff;
+}
+
+.it-header-item a:hover {
+	color: var(--primary-color);
+}
+
 /* My Journey */
 .journey {
 	background: var(--tertiary-color);
-	max-width: 800px;
-	max-height: 600px;
 	margin: 4rem;
+	padding: 0 20px;
 }
 
 .journey-title {
@@ -187,9 +277,82 @@ h3 {
 
 .journey-text {
 	color: #fff;
-	line-height: 1.2;
 	font-size: 1.25rem;
 	padding-bottom: 10px;
+	text-align: left;
+	align-items: left;
+}
+
+.journey-text p {
+	line-height: 1.2;
+	padding-bottom: 20px;
+}
+
+/* My Resume */
+/* My Journey */
+.resume {
+	background: var(--tertiary-color);
+	margin: 4rem;
+	padding: 0 20px;
+	max-width: 1200px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.resume-container {
+}
+
+.resume-title {
+	color: var(--primary-color);
+	font-size: 2rem;
+	padding: 2rem 0 0 0;
+}
+
+.resume-resumePDF {
+	width: 100%;
+	height: 800px;
+	showtoolbar: false;
+}
+
+/* Handyman page */
+.handyman-summary-title {
+	color: var(--primary-color);
+	font-size: 2rem;
+	padding: 2rem 0 0 0;
+}
+
+.handyman-summary-text {
+	color: #fff;
+	font-size: 1.25rem;
+	padding-bottom: 10px;
+	text-align: left;
+	align-items: left;
+}
+
+.handyman-summary-text p {
+	line-height: 1.2;
+	padding-bottom: 20px;
+}
+
+.handyman-section-title {
+	color: var(--primary-color);
+	font-size: 2rem;
+	padding-top: 20px;
+}
+
+.handyman-inside-item,
+.handyman-outside-item {
+	padding-left: 50px;
+}
+
+.handyman-icon {
+	margin-right: 10px;
+}
+
+.handyman-inside-list-item,
+.handyman-outside-list-item {
+	padding-left: 75px;
 }
 
 /* Heading */
@@ -300,7 +463,7 @@ h3 {
 }
 
 .btn:hover {
-	transform: scale(0.98);
+	transform: scale(1.1);
 }
 
 .ticket-created {

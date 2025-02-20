@@ -5,6 +5,8 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import IT from './pages/IT';
+import Handyman from './pages/Handyman';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/login' element={<Login />} />
             <Route path='/register' element={<Register />} />
+            <Route path='/itprofessional' element={<IT />} />
+            <Route path='/handyman' element={<Handyman />} />
           </Routes>
         </div>
       </Router>
