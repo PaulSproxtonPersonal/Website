@@ -6,7 +6,7 @@ function Home() {
     return (
         <>
             <section className="summary" id="home">
-                <div className="container">
+                <div className="container container-lg">
                     <h2 className="summary-title">Experienced Software Leader</h2>
                     <div className="summary-flex">
                         <img src="../../images/HeadShot1.jpg" alt="Paul Sproxton" />
@@ -27,7 +27,7 @@ function Home() {
             </section>
 
             <section className="passion" id="passion">
-                <div className="container">
+                <div className="container container-lg">
                     <h2 className="passion-title">Handyman Passion</h2>
                     <div className="passion-flex">
                         <img src="../../images/HeadShot1.jpg" alt="Paul Sproxton" />

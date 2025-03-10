@@ -7,13 +7,23 @@ import { HiMiniWrenchScrewdriver } from "react-icons/hi2";
 function Handyman() {
     return (
         <>
+            <header className="handyman-header">
+                <ul className="handyman-header-list">
+                    <li className="handyman-header-item">
+                        <a href="#summary">Services</a>
+                    </li>
+                    <li className="handyman-header-item">
+                    <a href="#projects">Past Projects</a>
+                    </li>
+                </ul>
+            </header>
+            
             <h1>Handyman Services</h1>
 
-            <section className="summary">
-                <div className="container">
+            <section className="handyman-summary" id="summary">
+                <div className="container container-lg">
                     <h2 className="handyman-summary-title">Services Summary</h2>
                     <div className="handyman-summary-text">
-                    
                         <p>
                             I offer a variety of services both inside and outside of your property.  Some of these services include:
                         </p>
@@ -44,6 +54,153 @@ function Handyman() {
                             </ul>
                             <li className="handyman-outside-item"><HiMiniWrenchScrewdriver className="handyman-icon" />General Repairs</li>
                         </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section className="handyman-projects" id="projects">
+                <div className="container container-lg">
+                    <h2 className="handyman-project-title">
+                        Completed Projects
+                    </h2>
+                    <div className="handyman-project-text">
+                        <p>
+                            Here are some of the projects that I have completed.
+                        </p>
+
+                        <div className="container container-lg projects-grid">
+                            <div className="project">
+                                <h3>Hardwood floor installation Room 1</h3>
+                                <p>Before and During installation</p>
+                                <div className="project-grid">
+                                    <div className="project-item">
+                                        <a 
+                                            href="..\..\images\Flooring\Hardwood\House1\Room1\Before1.jpg" 
+                                            data-lightbox="before-1"
+                                            data-title="Before 1"
+                                        >
+                                            <img src="..\..\images\Flooring\Hardwood\House1\Room1\Before1.jpg" alt="Before 1" />
+                                        </a>
+                                    </div>
+                                    <div className="project-item">
+                                        <a 
+                                            href="..\..\images\Flooring\Hardwood\House1\Room1\Before2.jpg" 
+                                            data-lightbox="before-2"
+                                            data-title="Before 2"
+                                        >
+                                            <img src="..\..\images\Flooring\Hardwood\House1\Room1\Before2.jpg" alt="Before 2" />
+                                        </a>
+                                    </div>
+                                    <div className="project-item">
+                                        <a 
+                                            href="..\..\images\Flooring\Hardwood\House1\Room1\During1.jpg" 
+                                            data-lightbox="during-1"
+                                            data-title="During 1"
+                                        >
+                                            <img src="..\..\images\Flooring\Hardwood\House1\Room1\During1.jpg" alt="During 1" />
+                                        </a>
+                                    </div>
+                                    <div className="project-item">
+                                        <a 
+                                            href="..\..\images\Flooring\Hardwood\House1\Room1\During2.jpg" 
+                                            data-lightbox="during-2"
+                                            data-title="During 2"
+                                        >
+                                            <img src="..\..\images\Flooring\Hardwood\House1\Room1\During2.jpg" alt="During 2" />
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <p>After installation</p>
+                                <div className="project-grid">
+                                    <div className="project-item">
+                                        <a 
+                                            href="..\..\images\Flooring\Hardwood\House1\Room1\After1.jpg"
+                                            data-lightbox="after-1"
+                                            data-title="After 1"
+                                        >
+                                            <img src="..\..\images\Flooring\Hardwood\House1\Room1\After1.jpg" alt="After 1" />
+                                        </a>
+                                    </div>
+                                    <div className="project-item">
+                                        <a 
+                                            href="..\..\images\Flooring\Hardwood\House1\Room1\After2.jpg"
+                                            data-lightbox="after-2"
+                                            data-title="After 2"
+                                        >
+                                            <img src="..\..\images\Flooring\Hardwood\House1\Room1\After2.jpg" alt="After 2" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div className="container container-lg projects-grid">
+                            <div className="project">
+                                <h3>Hardwood floor installation Room 2</h3>
+                                <p>Before installation</p>
+                                <div className="project-grid">
+                                    <div className="project-item">
+                                        <a 
+                                            href="..\..\images\Flooring\Hardwood\House1\Room2\Before1.jpg" 
+                                            data-lightbox="before-1"
+                                            data-title="Before 1"
+                                        >
+                                            <img src="..\..\images\Flooring\Hardwood\House1\Room2\Before1.jpg" alt="Before 1" />
+                                        </a>
+                                    </div>
+                                    <div className="project-item">
+                                        <a 
+                                            href="..\..\images\Flooring\Hardwood\House1\Room2\Before2.jpg" 
+                                            data-lightbox="before-2"
+                                            data-title="Before 2"
+                                        >
+                                            <img src="..\..\images\Flooring\Hardwood\House1\Room2\Before2.jpg" alt="Before 2" />
+                                        </a>
+                                    </div>
+                                    <div className="project-item">
+                                        <a 
+                                            href="..\..\images\Flooring\Hardwood\House1\Room2\Before3.jpg" 
+                                            data-lightbox="before-3"
+                                            data-title="Before 3"
+                                        >
+                                            <img src="..\..\images\Flooring\Hardwood\House1\Room2\Before3.jpg" alt="Before 3" />
+                                        </a>
+                                    </div>
+                                    <div className="project-item">
+                                        <a 
+                                            href="..\..\images\Flooring\Hardwood\House1\Room2\Before4.jpg" 
+                                            data-lightbox="before-4"
+                                            data-title="Before 4"
+                                        >
+                                            <img src="..\..\images\Flooring\Hardwood\House1\Room2\Before4.jpg" alt="Before 4" />
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <p>After installation</p>
+                                <div className="project-grid">
+                                    <div className="project-item">
+                                        <a 
+                                            href="..\..\images\Flooring\Hardwood\House1\Room2\After1.jpg"
+                                            data-lightbox="after-1"
+                                            data-title="After 1"
+                                        >
+                                            <img src="..\..\images\Flooring\Hardwood\House1\Room2\After1.jpg" alt="After 1" />
+                                        </a>
+                                    </div>
+                                    <div className="project-item">
+                                        <a 
+                                            href="..\..\images\Flooring\Hardwood\House1\Room2\After2.jpg"
+                                            data-lightbox="after-2"
+                                            data-title="After 2"
+                                        >
+                                            <img src="..\..\images\Flooring\Hardwood\House1\Room2\After2.jpg" alt="After 2" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

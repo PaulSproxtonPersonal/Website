@@ -14,7 +14,7 @@ function IT() {
                 </ul>
             </header>
             <section className="journey" id="journey">
-                <div className="container">
+                <div className="container container-lg">
                     <h2 className="journey-title">My Journey</h2>
                     <div className="journey-text">
                         <p>
