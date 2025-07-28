@@ -3,7 +3,7 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import Header from './components/Header'
 import Home from './pages/Home'
-import IT from './pages/IT'
+import Services from './pages/Services'
 import Handyman from './pages/Handyman'
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
 				<div className='container'>
 					<Routes>
 						<Route path='/' element={<Home />} />
-						<Route path='/itprofessional' element={<IT />} />
+						<Route path='/services' element={<Services />} />
 						<Route path='/handyman' element={<Handyman />} />
 					</Routes>
 				</div>

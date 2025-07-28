@@ -1,51 +1,32 @@
-import React from 'react'
-import { FaLinkedin } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import { IoIosContact } from 'react-icons/io'
 
 function Home() {
-    return (
-        <>
-            <section className="summary" id="home">
-                <div className="container container-lg">
-                    <h2 className="summary-title">Experienced Software Leader</h2>
-                    <div className="summary-flex">
-                        <img src="../../images/HeadShot1.jpg" alt="Paul Sproxton" />
-                        <div className="summary-text">
-                            <p>Results oriented leader with proven success in creating and managing diverse multi-national teams of Software Development Professionals. </p>
-                            <p>Experienced leader in managing and releasing software products for over 25 years.</p>
-                            <p>I am experienced in creating and managing remote teams both locally and offshore.</p>
+	return (
+		<div className='dark-overlay'>
+			<div className='home-inner'>
+				<h1 className='x-large'>Sproxton General Contracting</h1>
+				<div>
+					<p className='lead'>
+						Locally owned and operated in Brooklin, Ontario serving Durham Region and beyond.
+					</p>
+					<p className='p-1'>
+						We offer a wide range of services from simple handyman jobs to larger renovation
+						projects.
+					</p>
+					<p className='p-1'>
+						Evening and weekend work is available if normal working hours are not convenient for
+						you.
+					</p>
 
-                            <div className="sumarry-links">
-                                <Link to='/itprofessional' className='summary-link-btn'>Learn More</Link>
-                                <a href="https://www.linkedin.com/in/paul-sproxton" className='summary-link-btn' target='_blank' rel='noreferrer'>
-                                    <FaLinkedin /> LinkedIn
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="passion" id="passion">
-                <div className="container container-lg">
-                    <h2 className="passion-title">Handyman Passion</h2>
-                    <div className="passion-flex">
-                        <img src="../../images/HeadShot1.jpg" alt="Paul Sproxton" />
-                        <div className="passion-text">
-                            <p>Since a child I have had a passion working with my hands.  As an adult I have enjoyed working on various projects.</p>
-                            <p>I have completed full basement renovations. </p>
-                            <p>I specialize in flooring including installation of hardwood, laminate, and vinyl click flooring.</p>
-                            <p>I also do decking and patio restoration and creation projects.</p>
-
-                            <Link to='/handyman' className='summary-link-btn'>Learn More</Link>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        </>
-
-    )
+					<p className='text-highlight p-2'>Free Estimates</p>
+				</div>
+				<Link to='/contact' className='text-contact'>
+					<IoIosContact /> Contact Us
+				</Link>
+			</div>
+		</div>
+	)
 }
 
 export default Home
