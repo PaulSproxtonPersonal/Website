@@ -1,0 +1,6 @@
+{
+	"NODE_ENV": "development",
+	"PORT": 5000,
+	"MONGO_URI": "mongodb+srv://PaulSproxton:Sandra75!@websitecluster.7anal.mongodb.net/Website?retryWrites=true&w=majority&appName=WebsiteCluster",
+	"JWT_SECRET": "UKD4qpzjSMu3"
+}
