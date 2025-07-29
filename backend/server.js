@@ -27,7 +27,7 @@ console.log('Environment is ', process.env.NODE_ENV)
 if (process.env.NODE_ENV === 'production') {
 	console.log('Production build')
 	// Set static folder
-	app.use(express.static('frontend/build'))``
+	app.use(express.static('frontend/build'))
 
 	app.get('*', (req, res) => {
 		console.log('Index file is ', path.resolve(__dirname, 'frontend', 'build', 'index.html'))
