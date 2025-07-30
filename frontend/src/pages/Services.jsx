@@ -3,7 +3,7 @@ import { IoIosContact } from 'react-icons/io'
 
 function Services() {
 	return (
-		<div className='container dark-overlay'>
+		<div className='container'>
 			<Link to='/contact' className='text-contact'>
 				<IoIosContact /> Contact Us
 			</Link>

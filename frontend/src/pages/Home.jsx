@@ -3,7 +3,7 @@ import { IoIosContact } from 'react-icons/io'
 
 function Home() {
 	return (
-		<div className='dark-overlay'>
+		<div>
 			<div className='home-inner'>
 				<h1 className='x-large'>Sproxton General Contracting</h1>
 				<div>

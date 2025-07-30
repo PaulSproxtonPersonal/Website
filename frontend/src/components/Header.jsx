@@ -18,9 +18,6 @@ function Header() {
 				<li>
 					<Link to='/services'>Services</Link>
 				</li>
-				<li>
-					<Link to='/handyman'>General Handyman</Link>
-				</li>
 			</ul>
 			<ul
 				style={{
